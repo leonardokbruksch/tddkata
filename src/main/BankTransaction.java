@@ -19,12 +19,11 @@ public class BankTransaction {
     }
 
     private void removeMoneyFromSender() {
-        //receiver.withdraw(0);
+        sender.withdraw(amount);
     }
 
     private void sendMoneyToReceiver() {
-        //receiver.deposit(0);
-        //trocar por amount apos testes
+        receiver.deposit(amount);
     }
 
     public BankAccount getSender() {
